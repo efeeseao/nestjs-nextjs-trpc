@@ -1,0 +1,50 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nextjs frontend",
+  "author": "Fernando dos Santos",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src --max-warnings=0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix"
+    ]
+  },
+  "dependencies": {
+    "@trpc/client": "^10.36.0",
+    "@trpc/server": "^10.36.0",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint-config-next": "13.4.12",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "^8.42.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "postcss": "8.4.27",
+    "tailwindcss": "3.3.3",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
+  }
+}

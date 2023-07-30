@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-nestjs-trpc",
+  "version": "1.0.0",
+  "description": "monorepo boilerplate for nextjs-nestjs-trpc",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build:server": "pnpm --filter backend build",
+    "build:web": "pnpm --filter frontend build",
+    "start:server": "pnpm --filter backend start:prod",
+    "start:web": "pnpm --filter frontend start"
+  },
+  "keywords": [],
+  "author": "Fernando dos Santos <nando4803@gmail.com>",
+  "license": "ISC"
+}
